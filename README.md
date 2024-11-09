@@ -1,10 +1,11 @@
 # Raspberry-Pico-Pi-Air-Quality-Sensor
 
-##Purpose
+## Purpose
 The Air Quality Monitoring System aims to continuously measure the air quality of a room, taking into consideration the CO2, ammonia, benzene and smoke levels. It will display real time data and provide visual alerts for different air quality levels. 
 
-##Setup
+## Setup
 The components of the project include a Raspberry Pico Pi W, MQ – 135 sensor, LED’s, resistors and jumper wires. The code for the sensor will be developed in Micro Python on VS Code, and will utilise different libraries for sensor data.  During construction of the sensor, there are many safety considerations such as electricity when wiring and toxic gases during the testing phase. 
+
 <ins>Here is the code for the Air Quality Sensor: </ins>
 ```
 from machine import Pin, ADC
@@ -57,5 +58,5 @@ while True:
     
     time.sleep(2)  # Read every 2 seconds
 ```
-##Usage
+## Usage
 The overall usage of the Air Quality Monitoring System is to continuously assess and provide real-time information about the air quality in a given environment. It will most likely be used in places like a home or office building, as that is where the device is best suited. This is because the things it detects are most commonly found in those places. 
